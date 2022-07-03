@@ -3,7 +3,7 @@
  */
 
 import java.util.Set;
-
+import javax.swing.*;
 /** 
  * @author Administrator
  * @uml.annotations
@@ -21,9 +21,13 @@ public class Encrypt extends Convert {
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public Object getEncryptedImage() {
-		// begin-user-code
+		
+		ImgLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource(imgLocation)));
+		
+		EncryptedImg = Img.Encrypt();
+		
 		return EncryptedImage;
-		// end-user-code
+		
 	}
 
 	/**
