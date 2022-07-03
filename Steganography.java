@@ -38,10 +38,19 @@ public class Steganography extends EncryptionData {
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public void Encode() {
-		// begin-user-code
-		// TODO Auto-generated method stub
-
-		// end-user-code
+		
+		if(checkSize())
+		{
+			String msg = img.getMessage();
+			img.Encrypt(msg,img);
+		}
+		
+		else
+		{
+			JOptionPane.showMessageDialog(this,"Unable to Encrypt! Choose another Image","ERROR");
+		}
+		
+		
 	}
 
 	/**
