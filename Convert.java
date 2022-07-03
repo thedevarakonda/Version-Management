@@ -8,6 +8,8 @@
  *     derived_abstraction="platform:/resource/Steganography/Blank%20Model.emx#_jiHzoOGREeyAwrpWVs0H2A"
  * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
+import java.util.Scanner;
+
 public class Convert {
 	/** 
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
@@ -19,9 +21,12 @@ public class Convert {
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public Object getImage() {
-		// begin-user-code
+		
+		Scanenr sc = new Scanner(System.in);
+		System.out.print("Enter file location: ");
+		String img = sc.next();
 		return Image;
-		// end-user-code
+		
 	}
 
 	/**
